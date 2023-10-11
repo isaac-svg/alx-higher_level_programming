@@ -1,11 +1,6 @@
 def square_matrix_simple(matrix=[]):
-    res = []
-    for row in matrix:
-        auxillary_array = []
-        for element in row:
-            auxillary_array.append(element * element)
-        res.append(auxillary_array)
-    return res
+    
+    return list(map(lambda arr: list(map(lambda x: x*x, arr)), matrix))
 
 matrix = [
     [1, 2, 3],
