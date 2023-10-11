@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-def number_keys(a_dictionary:dict):
+def number_keys(a_dictionary):
     """Write a function that returns the number
       of keys in a dictionary."""
-    
     return len(a_dictionary.keys())
