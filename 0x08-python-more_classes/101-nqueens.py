@@ -12,16 +12,19 @@ N must be an integer greater than or equal to 4.
 
 import sys
 
+
 def initialise_board(n):
     """Initializes an `n`x`n` sized chessboard with ' 's."""
     board = [[' ' for _ in range(n)] for _ in range(n)]
     return board
+
 
 def board_deepcopy(board):
     """Creates and Returns a deepcopy of a chessboard."""
     if isinstance(board, list):
         return [board_deepcopy(row) for row in board]
     return board
+
 
 def get_solution(board):
     """Return the list of lists representation of a solved chessboard."""
@@ -31,6 +34,7 @@ def get_solution(board):
             if board[r][c] == "Q":
                 soln.append([r, c])
     return soln
+
 
 def crossed_out(board, row, col):
     """
@@ -84,6 +88,7 @@ def crossed_out(board, row, col):
         board[r][c] = "x"
         c -= 1
 
+
 def solve_recursively(board, row, queens, solutions):
     """Recursively solve an N-queens puzzle.
 
@@ -105,9 +110,11 @@ def solve_recursively(board, row, queens, solutions):
             tmp_board = board_deepcopy(board)
             tmp_board[row][c] = "Q"
             crossed_out(tmp_board, row, c)
-            solutions = solve_recursively(tmp_board, row + 1, queens + 1, solutions)
+            solutions = solve_recursively(tmp_board, row + 1,
+                                          queens + 1, solutions)
 
     return solutions
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
