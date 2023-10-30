@@ -59,7 +59,6 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
-    
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
@@ -78,7 +77,7 @@ class Rectangle:
         if rect_1.area() >= rect_2.area():
             return (rect_1)
         return (rect_2)
-    
+
     @classmethod
     def square(cls, size=0):
         """Return a new Rectangle with width and height equal to size.
@@ -113,4 +112,3 @@ class Rectangle:
         """Print a message for every deletion of a Rectangle."""
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
-    
