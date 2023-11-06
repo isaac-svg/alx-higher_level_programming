@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-
+"""Defines a function the checks if the types
+ of the params are same"""
 
 def is_same_class(obj, a_class):
     """Check if an object is an instance of a given class.

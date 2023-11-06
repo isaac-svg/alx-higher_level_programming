@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""Defines a list class"""
 
 class MyList(list):
     """Implements sorted printing for the built-in list class."""
