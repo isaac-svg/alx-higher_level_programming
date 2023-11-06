@@ -2,16 +2,16 @@
 """Defines a function that writes attributes to objects."""
 
 
-def add_attribute(obj, att, value):
+def add_attribute(obj, attribute, val):
     """Add a new attribute to an object if writable.
 
     Args:
         obj (any): The object to add an attribute to.
         att (str): The name of the attribute.
-        value (any): The value of att parameter.
+        val (any): The value of att parameter.
     Raises:
         TypeError: If the attribute cannot be added.
     """
     if not hasattr(obj, "__dict__"):
         raise TypeError("can't add new attribute")
-    setattr(obj, att, value)
+    setattr(obj, attribute, val)
