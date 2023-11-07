@@ -4,6 +4,7 @@
 
 
 def read_file(filename=""):
+    """reads from a file and prints it to stdout"""
     with open(filename) as file:
         for f in file:
             print(f)
