@@ -4,4 +4,3 @@ class Reactangle {
 }
 
 module.exports = Reactangle;
-
