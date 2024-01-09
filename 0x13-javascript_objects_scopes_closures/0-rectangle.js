@@ -1,9 +1,7 @@
 #!/usr/bin/node
-/**
- * @class  Defines an empty rectangle class
- */
-
-class Reactangle{
-
+class Reactangle {
 
 }
+
+module.exports = Reactangle;
+
