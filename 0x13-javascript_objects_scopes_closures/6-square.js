@@ -1,5 +1,6 @@
 #!/usr/bin/node
-const SquareParent = require("./5-square.js")
+const SquareParent = require('./5-square.js');
+
 module.exports = class Square extends SquareParent {
   charPrint (c) {
     if (c === undefined) {
