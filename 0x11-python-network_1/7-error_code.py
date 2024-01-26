@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Prints the reponse if the Status Code 
 of the response is less than 400"""
-
 import sys
 import requests
 
