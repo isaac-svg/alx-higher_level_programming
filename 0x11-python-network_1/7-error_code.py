@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Prints the reponse if the Status Code of the response is 
-less than 400"""
+"""Prints the reponse if the Status Code 
+of the response is less than 400"""
 
-import requests
 import sys
+import requests
 
 
 if __name__ == "__main__":
