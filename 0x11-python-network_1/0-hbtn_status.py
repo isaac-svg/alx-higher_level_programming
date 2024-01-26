@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Makes a fetch request to a url"""
-
 import urllib.request
 
 
