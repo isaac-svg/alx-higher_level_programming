@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Makes a post request with an email as a parameter"""
-
 import sys
 import urllib.request
 
